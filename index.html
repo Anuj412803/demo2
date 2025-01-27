@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulseEffect {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .pulse {
+      animation: pulseEffect 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen font-sans">
+
+  <div class="text-center space-y-6">
+    <div class="fade-in text-4xl md:text-5xl font-extrabold tracking-wide">
+      <h1>Coming Soon For Demo 2</h1>
+    </div>
+
+    <div class="fade-in text-lg md:text-xl opacity-70">
+      <p>We're working hard to bring something awesome!</p>
+    </div>
+
+    <div class="fade-in space-x-4">
+      <span class="inline-block bg-blue-500 text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transform hover:scale-110 transition-all duration-300">
+        Stay Tuned
+      </span>
+      <span class="inline-block bg-green-500 text-white py-2 px-6 rounded-full text-lg font-medium shadow-lg transform hover:scale-110 transition-all duration-300">
+        Join the Newsletter
+      </span>
+    </div>
+
+    <div class="mt-6">
+      <div class="pulse inline-block rounded-full w-16 h-16 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+      </div>
+    </div>
+
+    <div class="mt-10 text-sm opacity-50">
+      <p>Follow us on social media for updates!</p>
+    </div>
+  </div>
+
+</body>
+</html>
